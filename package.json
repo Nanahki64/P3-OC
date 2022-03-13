@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3-Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanahki64/P3-OC.git"
+  },
+  "author": "Nanahki64",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nanahki64/P3-OC/issues"
+  },
+  "homepage": "https://github.com/Nanahki64/P3-OC#readme"
+}
