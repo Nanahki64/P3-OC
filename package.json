@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nanahki64/P3-OC/issues"
   },
-  "homepage": "https://github.com/Nanahki64/P3-OC#readme"
+  "homepage": "https://github.com/Nanahki64/P3-OC#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
