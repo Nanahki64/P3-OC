@@ -41,6 +41,7 @@
 
     >button {
         @include btn;
+        @include shadow;
         cursor: pointer;
         user-select: none;
         width: 13em;
@@ -64,11 +65,12 @@
         @include roboto-700;
         @include P_cards;
         @include fonctionnement-hover;
+        @include shadow;
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: $color-main-secondary;
-        padding-right: 6em;
+        padding-right: 3em;
     }
 
     &__dot {
@@ -89,11 +91,15 @@
         width: 2em;
         margin-right: 1.5em;
     }
+
+    &__texte {
+        padding-right: 1em;
+    }
 }
 
 .icone {
     font-size: 1.2em;
-    padding-left: 0.5em;
+    padding-left: 0.1em;
 }
 
 /*RESTAURANTS*/
@@ -119,6 +125,7 @@
     }
 
     &__card {
+        @include shadow;
         display: flex;
         align-items: flex-start;
         flex-flow: column wrap;
