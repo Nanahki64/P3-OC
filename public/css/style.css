@@ -571,5 +571,22 @@ header > .header__img {
 }
 
 /*COLORS*/
+/*COLORS*/
+/*FONTS*/
+/*BTN*/
+/*FONCTIONNEMENT*/
+/*DOT*/
+/*MAIN*/
+/*FLECHE HEADER*/
+.arrow-header {
+  position: relative;
+  font-size: 1.4em;
+  top: 1.3em;
+  right: 12em;
+  color: black;
+  text-decoration: none;
+}
+
+/*COLORS*/
 
 /*# sourceMappingURL=style.css.map */
