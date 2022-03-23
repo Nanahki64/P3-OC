@@ -429,7 +429,7 @@ header > .header__img {
   justify-content: space-around;
   align-items: center;
   background-color: #f6f6f6;
-  padding-right: 8em;
+  padding-right: 6em;
 }
 .fonctionnement__view:hover {
   background-color: #9256dc1c;
@@ -457,9 +457,15 @@ header > .header__img {
   margin: auto;
   padding-bottom: 5em;
 }
+.fonctionnement__icon--sizing {
+  text-align: center;
+  width: 2em;
+  margin-right: 1.5em;
+}
 
 .icone {
   font-size: 1.2em;
+  padding-left: 0.5em;
 }
 
 /*RESTAURANTS*/

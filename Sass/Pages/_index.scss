@@ -68,7 +68,7 @@
         justify-content: space-around;
         align-items: center;
         background-color: $color-main-secondary;
-        padding-right: 8em;
+        padding-right: 6em;
     }
 
     &__dot {
@@ -83,10 +83,17 @@
         @include fonctionnement-container;
         padding-bottom: 5em;
     }
+
+    &__icon--sizing {
+        text-align: center;
+        width: 2em;
+        margin-right: 1.5em;
+    }
 }
 
 .icone {
     font-size: 1.2em;
+    padding-left: 0.5em;
 }
 
 /*RESTAURANTS*/
