@@ -132,6 +132,12 @@
         @include restaurants-container;
         padding-top: 3em;
     }
+
+    &>.second-container>.restaurants__card>a {
+        text-decoration: none;
+        color: black;
+        height: 15em;
+    }
 }
 
 .notification {
@@ -154,8 +160,9 @@
 
 .heart1 {
     position: relative;
-    top: 11.5em;
-    right: 3em;
+    width: 1em;
+    bottom: 3em;
+    left: 19em;
 }
 
 .second-container {

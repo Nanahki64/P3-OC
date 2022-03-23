@@ -504,6 +504,11 @@ header > .header__img {
   margin: auto;
   padding-top: 3em;
 }
+.restaurants > .second-container > .restaurants__card > a {
+  text-decoration: none;
+  color: black;
+  height: 15em;
+}
 
 .notification {
   font-family: "Roboto", sans-serif;
@@ -525,8 +530,9 @@ header > .header__img {
 
 .heart1 {
   position: relative;
-  top: 11.5em;
-  right: 3em;
+  width: 1em;
+  bottom: 3em;
+  left: 19em;
 }
 
 .second-container {
