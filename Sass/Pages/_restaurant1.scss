@@ -1,0 +1,12 @@
+@import "../Utils/variables";
+@import "../Utils/mixin";
+
+/*FLECHE HEADER*/
+.arrow-header {
+    position: relative;
+    font-size: 1.4em;
+    top: 1.3em;
+    right: 12em;
+    color: black;
+    text-decoration: none;
+}

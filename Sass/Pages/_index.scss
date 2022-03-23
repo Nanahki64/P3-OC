@@ -1,0 +1,203 @@
+@import "../Utils/variables";
+@import "../Utils/mixin";
+
+/*LOCATION*/
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-main-primary;
+    box-shadow: inset 0em 0.1em 0.2em 0em rgb(204, 203, 203);
+    user-select: none;
+
+    >p {
+        @include roboto-700;
+    }
+
+    >i {
+        padding-right: 1em;
+    }
+}
+
+/*PRESENTATION*/
+.presentation {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: $color-main-secondary;
+    padding: 1.5em 0 4em 0;
+    >h1 {
+        @include roboto-900;
+        font-size: 1.6em;
+        text-align: center;
+        max-width: 10em;
+    }
+
+    >p {
+        @include roboto-400;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    >button {
+        @include btn;
+        cursor: pointer;
+        user-select: none;
+        width: 13em;
+        margin-top: 1em;
+    }
+}
+
+/*FONCTIONNEMENT*/
+.fonctionnement {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 20em;
+    justify-content: space-between;
+    padding-top: 2.5em;
+    
+    &__title {
+        @include roboto-900;
+    }
+
+    &__view {
+        @include roboto-700;
+        @include P_cards;
+        @include fonctionnement-hover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $color-main-secondary;
+        padding-right: 8em;
+    }
+
+    &__dot {
+        @include dot;
+        @include roboto-400;
+        position: relative;
+        right: 1.2em;
+        z-index: 1;
+    }
+
+    &__container {
+        @include fonctionnement-container;
+        padding-bottom: 5em;
+    }
+}
+
+.icone {
+    font-size: 1.2em;
+}
+
+/*RESTAURANTS*/
+.restaurants {
+    background-color: $color-main-secondary;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 5em;
+
+    &__title {
+        @include roboto-900;
+    }
+
+    &__card__title {
+        @include roboto-900;
+        margin: 1em 0 0 0.8em;
+    }
+
+    &__card__location {
+        @include roboto-400;
+        margin: 0.3em 0 0.5em 1em;
+    }
+
+    &__card {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        background-color: $color-restaurants-card;
+        border-radius: 1em;
+        height: 15em;
+        width: 22em;
+    }
+
+    &__img--resize {
+        border-radius: 1em 1em 0 0;
+        height: 10em;
+        width: 22em;
+        object-fit: cover;
+    }
+
+    &__container {
+        @include restaurants-container;
+        padding-top: 3em;
+    }
+
+    &>.second-container>.restaurants__card>a {
+        text-decoration: none;
+        color: black;
+        height: 15em;
+    }
+}
+
+.notification {
+    @include roboto-700;
+    position: relative;
+    bottom: 13.5em;
+    right: 3.5em;
+    border-radius: 0.3em;
+    width: 5.5em;
+    height: 2.2em;
+    text-align: center;
+    color: $color-text-notification;
+    background-color: $color-background-notification;
+    user-select: none;
+
+    &__texte {
+        padding-top: 0.6em;
+    }
+}
+
+.heart1 {
+    position: relative;
+    width: 1em;
+    bottom: 3em;
+    left: 19em;
+}
+
+.second-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    min-height: 63em;
+}
+
+/*FOOTER*/
+.footer__contenent {
+    background-color: $color-background-footer;
+
+    &__img {
+        margin-top: 1.5em;
+        filter: invert(100%);
+        width: 7em;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3em;
+
+    &>a {
+        @include roboto-400;
+        margin: 1em 0 0 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    &>a>i {
+        margin-right: 0.5em;
+    }
+}
