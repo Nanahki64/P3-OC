@@ -511,9 +511,10 @@ header > .header__img {
   height: 10em;
   width: 22em;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 .restaurants__container {
-  width: 87%;
+  width: 89%;
   margin: auto;
   padding-top: 3em;
 }
