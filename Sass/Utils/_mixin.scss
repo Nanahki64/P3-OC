@@ -21,6 +21,11 @@
     font-weight: 900;
 }
 
+@mixin shrikhand-400 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+}
+
 /*BTN*/
 @mixin btn {
     @include roboto-500;

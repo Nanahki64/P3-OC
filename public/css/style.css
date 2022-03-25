@@ -597,9 +597,55 @@ header > .header__img {
   position: relative;
   font-size: 1.4em;
   top: 1.3em;
-  right: 12em;
+  right: 11.5em;
   color: black;
   text-decoration: none;
+}
+
+/*IMAGE-RESTAURANT*/
+.restaurant {
+  height: 18em;
+  width: 100%;
+}
+.restaurant__image {
+  height: 18em;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*MENU*/
+.menu {
+  background-color: #eaeaea;
+  height: 40em;
+}
+.menu__container {
+  width: 90%;
+  margin: auto;
+}
+.menu__header {
+  position: absolute;
+  width: 100%;
+  top: 19.7em;
+  border-radius: 2em 2em 0 0;
+  background-color: #eaeaea;
+}
+.menu__title--texte {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+.menu__second__title--text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-top: 0.8em;
+}
+
+.heart1 {
+  position: absolute;
+  top: 1.3em;
+  left: 20em;
 }
 
 /*COLORS*/
