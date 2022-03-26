@@ -29,6 +29,9 @@
     &__container {
         width: 90%;
         margin: auto;
+        &>h2{
+            margin-bottom: 0.2em;
+        }
     }
     &__header {
         position: absolute;
@@ -53,6 +56,16 @@
     position: absolute;
     top: 1.3em;
     left: 20em;
+}
+
+/*BORDER à refactoriser en mixin*/
+.border {
+    display: block;
+    width: 3em;
+    height: 0.2em;
+    background-color: $color-tertiary;
+    border-radius: 2em;
+    margin-bottom: 1em;
 }
 
 /*ENTRÉES*/
