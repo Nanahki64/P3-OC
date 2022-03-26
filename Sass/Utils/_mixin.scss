@@ -79,3 +79,25 @@
         width: 89%;
         margin: auto;
 }
+
+/*PLATS*/
+@mixin card-plats {
+    @include roboto-500;
+    @include shadow;
+    width: 40em;
+    height: fit-content;
+    padding: 0 2em 0 0.7em;
+    background-color: $color-neutral-card;
+    border-radius: 1em;
+    font-size: 0.7em;
+    &>h2 {
+        margin-bottom: 0;
+    }
+    &>div>p {
+        margin: 0.7em 0 0.7em 0;
+    }
+    &>div>h3 {
+        font-size: 1.2em;
+        margin: 0 0 0.7em 0;
+    }
+}
