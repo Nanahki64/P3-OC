@@ -54,3 +54,21 @@
     top: 1.3em;
     left: 20em;
 }
+
+/*ENTRÉES*/
+.entrees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 14.5em;
+    &__menu {
+        @include card-plats;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
