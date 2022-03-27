@@ -80,6 +80,13 @@
         margin: auto;
 }
 
+/*CARTE*/
+@mixin card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /*PLATS*/
 @mixin card-plats {
     @include roboto-500;

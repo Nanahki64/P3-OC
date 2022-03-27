@@ -50,6 +50,10 @@
         font-size: 1.2em;
         padding-top: 0.8em;
     }
+    &__restaurant2 {
+        background-color: $color-main-primary;
+        height: 70em;
+    }
 }
 
 .heart2 {
@@ -70,9 +74,7 @@
 
 /*CARTE*/
 .carte {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include card;
     height: 14.5em;
     &__menu {
         @include card-plats;
@@ -83,6 +85,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__restaurant2 {
+        @include card;
+        height: 19.5em;
     }
 }
 

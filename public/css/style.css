@@ -357,6 +357,7 @@ header > .header__img {
 /*FONCTIONNEMENT*/
 /*DOT*/
 /*MAIN*/
+/*CARTE*/
 /*PLATS*/
 /*LOCATION*/
 .location {
@@ -596,6 +597,7 @@ header > .header__img {
 /*FONCTIONNEMENT*/
 /*DOT*/
 /*MAIN*/
+/*CARTE*/
 /*PLATS*/
 /*FLECHE HEADER*/
 .arrow-header {
@@ -649,6 +651,10 @@ header > .header__img {
   font-size: 1.2em;
   padding-top: 0.8em;
 }
+.menu__restaurant2 {
+  background-color: #eaeaea;
+  height: 70em;
+}
 
 .heart2 {
   position: absolute;
@@ -700,6 +706,12 @@ header > .header__img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.carte__restaurant2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 19.5em;
 }
 
 /*COMMANDE*/
