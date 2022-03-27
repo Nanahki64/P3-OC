@@ -396,7 +396,7 @@ header > .header__img {
   font-size: 1.2em;
   text-align: center;
 }
-.presentation > button {
+.presentation > a > button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: white;
@@ -419,6 +419,7 @@ header > .header__img {
   min-height: 20em;
   justify-content: space-between;
   padding-top: 2.5em;
+  user-select: none;
 }
 .fonctionnement__title {
   font-family: "Roboto", sans-serif;
@@ -581,6 +582,7 @@ header > .header__img {
   margin: 1em 0 0 0;
   color: white;
   text-decoration: none;
+  width: fit-content;
 }
 .footer-container > a > i {
   margin-right: 0.5em;
@@ -619,7 +621,7 @@ header > .header__img {
 /*MENU*/
 .menu {
   background-color: #eaeaea;
-  height: 40em;
+  height: 65em;
 }
 .menu__container {
   width: 90%;
@@ -664,14 +666,14 @@ header > .header__img {
   margin-bottom: 1em;
 }
 
-/*ENTRÉES*/
-.entrees {
+/*CARTE*/
+.carte {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 14.5em;
 }
-.entrees__menu {
+.carte__menu {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -684,20 +686,44 @@ header > .header__img {
   display: flex;
   flex-flow: column wrap;
 }
-.entrees__menu > h2 {
+.carte__menu > h2 {
   margin-bottom: 0;
 }
-.entrees__menu > div > p {
+.carte__menu > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.entrees__menu > div > h3 {
+.carte__menu > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
 }
-.entrees__description {
+.carte__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*COMMANDE*/
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.order > button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 2em;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 1em 0 1em 0;
+  border: none;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  cursor: pointer;
+  user-select: none;
+  width: 11em;
+  height: 3em;
+  font-size: 0.9em;
 }
 
 /*COLORS*/

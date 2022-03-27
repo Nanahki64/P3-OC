@@ -25,11 +25,11 @@
 /*MENU*/
 .menu {
     background-color: $color-main-primary;
-    height: 40em;
+    height: 65em;
     &__container {
         width: 90%;
         margin: auto;
-        &>h2{
+        & > h2 {
             margin-bottom: 0.2em;
         }
     }
@@ -68,8 +68,8 @@
     margin-bottom: 1em;
 }
 
-/*ENTRÉES*/
-.entrees {
+/*CARTE*/
+.carte {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,5 +83,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+/*COMMANDE*/
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5em;
+    &>button {
+        @include btn;
+        @include shadow;
+        cursor: pointer;
+        user-select: none;
+        width: 11em;
+        height: 3em;
+        font-size: 0.9em;
     }
 }

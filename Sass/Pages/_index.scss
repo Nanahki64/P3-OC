@@ -39,7 +39,7 @@
         text-align: center;
     }
 
-    >button {
+    >a>button {
         @include btn;
         @include shadow;
         cursor: pointer;
@@ -56,6 +56,7 @@
     min-height: 20em;
     justify-content: space-between;
     padding-top: 2.5em;
+    user-select: none;
     
     &__title {
         @include roboto-900;
@@ -210,6 +211,7 @@
         margin: 1em 0 0 0;
         color: white;
         text-decoration: none;
+        width: fit-content;
     }
 
     &>a>i {
