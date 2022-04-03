@@ -548,6 +548,7 @@ header > .header__img {
   color: #038867;
   background-color: #99e2d0;
   user-select: none;
+  z-index: 2;
 }
 .notification__texte {
   padding-top: 0.6em;
@@ -555,12 +556,13 @@ header > .header__img {
 
 .heart1 {
   position: relative;
-  width: 1em;
-  bottom: 3em;
-  left: 19em;
+  width: 1.5em;
+  height: 1.5em;
+  top: 11.8em;
+  right: 3em;
+  z-index: 2;
 }
-
-path {
+.heart1 path {
   fill: white;
 }
 
@@ -673,6 +675,9 @@ path {
   position: absolute;
   top: 1.3em;
   left: 20em;
+}
+.heart2 path {
+  fill: #eaeaea;
 }
 
 /*BORDER à refactoriser en mixin*/

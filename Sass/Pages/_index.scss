@@ -168,6 +168,7 @@
     color: $color-text-notification;
     background-color: $color-background-notification;
     user-select: none;
+    z-index: 2;
 
     &__texte {
         padding-top: 0.6em;
@@ -176,13 +177,14 @@
 
 .heart1 {
     position: relative;
-    width: 1em;
-    bottom: 3em;
-    left: 19em;
-}
-
-path {
-    fill: white;
+    width: 1.5em;
+    height: 1.5em;
+    top: 11.8em;
+    right: 3em;
+    z-index: 2;
+    path {
+        fill: white;
+    }
 }
 
 .second-container {

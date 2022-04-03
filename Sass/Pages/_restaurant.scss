@@ -58,6 +58,9 @@
     position: absolute;
     top: 1.3em;
     left: 20em;
+    path {
+        fill: $color-main-primary;
+    }
 }
 
 /*BORDER à refactoriser en mixin*/
