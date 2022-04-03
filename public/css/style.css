@@ -354,10 +354,12 @@ header > .header__img {
 /*FONTS*/
 /*BTN*/
 /*SHADOW*/
+/*HOVER SHADOW*/
 /*FONCTIONNEMENT*/
 /*DOT*/
 /*MAIN*/
 /*CARTE*/
+/*IMAGE-RESTAURANT*/
 /*PLATS*/
 /*LOCATION*/
 .location {
@@ -406,11 +408,16 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
+  /*Demander à pierre si filter brigtness est ok car éclaircit aussi le texte*/
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;
   width: 13em;
   margin-top: 1em;
+}
+.presentation > a > button:hover {
+  background: linear-gradient(#fd84db, #9c5ceb);
+  box-shadow: 0em 0.8em 1em 0.1em #949494;
 }
 
 /*FONCTIONNEMENT*/
@@ -553,6 +560,10 @@ header > .header__img {
   left: 19em;
 }
 
+path {
+  fill: white;
+}
+
 .second-container {
   display: flex;
   flex-flow: column wrap;
@@ -594,10 +605,12 @@ header > .header__img {
 /*FONTS*/
 /*BTN*/
 /*SHADOW*/
+/*HOVER SHADOW*/
 /*FONCTIONNEMENT*/
 /*DOT*/
 /*MAIN*/
 /*CARTE*/
+/*IMAGE-RESTAURANT*/
 /*PLATS*/
 /*FLECHE HEADER*/
 .arrow-header {
@@ -730,12 +743,17 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
+  /*Demander à pierre si filter brigtness est ok car éclaircit aussi le texte*/
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;
   width: 11em;
   height: 3em;
   font-size: 0.9em;
+}
+.order > button:hover {
+  background: linear-gradient(#fd84db, #9c5ceb);
+  box-shadow: 0em 0.8em 1em 0.1em #949494;
 }
 
 /*COLORS*/

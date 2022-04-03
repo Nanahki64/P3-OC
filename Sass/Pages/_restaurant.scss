@@ -13,11 +13,9 @@
 
 /*IMAGE-RESTAURANT*/
 .restaurant {
-    height: 18em;
-    width: 100%;
+    @include restaurant-settings;
     &__image {
-        height: 18em;
-        width: 100%;
+        @include restaurant-settings;
         object-fit: cover;
     }
 }
