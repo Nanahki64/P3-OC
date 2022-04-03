@@ -181,9 +181,14 @@
     height: 1.5em;
     top: 11.8em;
     right: 3em;
-    z-index: 2;
-    path {
-        fill: white;
+    z-index: 10;
+    cursor: pointer;
+    svg path {
+        fill: transparent;
+        &:active {
+            cursor: pointer;
+            fill: url(#gradient1);
+        }
     }
 }
 

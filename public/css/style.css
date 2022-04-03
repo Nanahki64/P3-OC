@@ -560,10 +560,15 @@ header > .header__img {
   height: 1.5em;
   top: 11.8em;
   right: 3em;
-  z-index: 2;
+  z-index: 10;
+  cursor: pointer;
 }
-.heart1 path {
-  fill: white;
+.heart1 svg path {
+  fill: transparent;
+}
+.heart1 svg path:active {
+  cursor: pointer;
+  fill: url(#gradient1);
 }
 
 .second-container {
@@ -675,9 +680,14 @@ header > .header__img {
   position: absolute;
   top: 1.3em;
   left: 20em;
+  cursor: pointer;
 }
-.heart2 path {
-  fill: #eaeaea;
+.heart2 svg path {
+  fill: transparent;
+}
+.heart2 svg path:active {
+  cursor: pointer;
+  fill: url(#gradient1);
 }
 
 /*BORDER à refactoriser en mixin*/
