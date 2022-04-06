@@ -86,29 +86,18 @@
     height: 14.5em;
 
     &__menu {
+
         &--animated {
-            @include card-plats;
-            @include animated-card-menu;
-            display: flex;
-            flex-flow: column wrap;
-        }
-        &--animated2 {
-            @include card-plats;
-            @include animated-card-menu2;
-            display: flex;
-            flex-flow: column wrap;
-        }
-        &--animated3 {
-            @include card-plats;
-            @include animated-card-menu3;
-            display: flex;
-            flex-flow: column wrap;
-        }
-        &--animated4 {
-            @include card-plats;
-            @include animated-card-menu4;
-            display: flex;
-            flex-flow: column wrap;
+            @for $menu from 1 through 10 {
+                &-#{$menu} {
+                    @include card-plats;
+                    display: flex;
+                    flex-flow: column wrap;
+                    opacity: 0;
+                    animation: animated-menu 2s 100ms*$menu 1 forwards;
+                    transform-origin: top;
+                }
+            }
         }
         @include setting-animated-card-menu;
     }
@@ -119,13 +108,12 @@
         align-items: center;
     }
 
+
     &__restaurant2 {
-        &--animated {
             @include card;
             height: 19.5em;
             animation: animated-menu 2s 1 forwards;
             transform-origin: top;
-        }
     }
 }
 

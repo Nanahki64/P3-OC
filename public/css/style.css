@@ -409,7 +409,6 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
-  /*Demander à pierre si filter brigtness est ok car éclaircit aussi le texte*/
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;
@@ -573,11 +572,11 @@ header > .header__img {
 }
 @keyframes animated-fill {
   from {
-    fill: #9356DC;
+    fill: url(#gradient1);
     transform: scale(0);
   }
   to {
-    fill: #e06adb;
+    fill: url(#gradient1);
     transform: scale(1);
   }
 }
@@ -703,11 +702,11 @@ header > .header__img {
 }
 @keyframes animated-fill {
   from {
-    fill: #9356DC;
+    fill: url(#gradient1);
     transform: scale(0);
   }
   to {
-    fill: #e06adb;
+    fill: url(#gradient1);
     transform: scale(1);
   }
 }
@@ -729,7 +728,7 @@ header > .header__img {
   justify-content: space-between;
   height: 14.5em;
 }
-.carte__menu--animated {
+.carte__menu--animated-1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -739,23 +738,35 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   font-size: 0.7em;
-  opacity: 0;
-  animation: animated-menu 2s 1 forwards;
-  transform-origin: top;
   display: flex;
   flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 100ms 1 forwards;
+  transform-origin: top;
 }
-.carte__menu--animated > h2 {
+.carte__menu--animated-1 > h2 {
   margin-bottom: 0;
 }
-.carte__menu--animated > div > p {
+.carte__menu--animated-1 > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.carte__menu--animated > div > h3 {
+.carte__menu--animated-1 > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
 }
-.carte__menu--animated2 {
+.carte__menu--animated-1:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -765,23 +776,35 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   font-size: 0.7em;
-  opacity: 0;
-  animation: animated-menu 2s 250ms 1 forwards;
-  transform-origin: top;
   display: flex;
   flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 200ms 1 forwards;
+  transform-origin: top;
 }
-.carte__menu--animated2 > h2 {
+.carte__menu--animated-2 > h2 {
   margin-bottom: 0;
 }
-.carte__menu--animated2 > div > p {
+.carte__menu--animated-2 > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.carte__menu--animated2 > div > h3 {
+.carte__menu--animated-2 > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
 }
-.carte__menu--animated3 {
+.carte__menu--animated-2:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -791,23 +814,111 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 300ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-3 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-3 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-3 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-3:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 400ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-4 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-4 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-4 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-4:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
   opacity: 0;
   animation: animated-menu 2s 500ms 1 forwards;
   transform-origin: top;
-  display: flex;
-  flex-flow: column wrap;
 }
-.carte__menu--animated3 > h2 {
+.carte__menu--animated-5 > h2 {
   margin-bottom: 0;
 }
-.carte__menu--animated3 > div > p {
+.carte__menu--animated-5 > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.carte__menu--animated3 > div > h3 {
+.carte__menu--animated-5 > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
 }
-.carte__menu--animated4 {
+.carte__menu--animated-5:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-6 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -817,21 +928,185 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   font-size: 0.7em;
-  opacity: 0;
-  animation: animated-menu 2s 750ms 1 forwards;
-  transform-origin: top;
   display: flex;
   flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 600ms 1 forwards;
+  transform-origin: top;
 }
-.carte__menu--animated4 > h2 {
+.carte__menu--animated-6 > h2 {
   margin-bottom: 0;
 }
-.carte__menu--animated4 > div > p {
+.carte__menu--animated-6 > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.carte__menu--animated4 > div > h3 {
+.carte__menu--animated-6 > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-6:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-7 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 700ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-7 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-7 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-7 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-7:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-8 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 800ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-8 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-8 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-8 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-8:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-9 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 900ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-9 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-9 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-9 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-9:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
+}
+.carte__menu--animated-10 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-flow: column wrap;
+  opacity: 0;
+  animation: animated-menu 2s 1000ms 1 forwards;
+  transform-origin: top;
+}
+.carte__menu--animated-10 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated-10 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated-10 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated-10:hover {
+  animation: show-selection 1s forwards;
+}
+@keyframes show-selection {
+  /*transition pour le check*/
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: red;
+  }
 }
 @keyframes animated-menu {
   from {
@@ -848,7 +1123,7 @@ header > .header__img {
   justify-content: space-between;
   align-items: center;
 }
-.carte__restaurant2--animated {
+.carte__restaurant2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -874,7 +1149,6 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
-  /*Demander à pierre si filter brigtness est ok car éclaircit aussi le texte*/
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;

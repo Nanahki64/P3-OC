@@ -35,7 +35,6 @@
     background: linear-gradient($color-secondary, $color-primary);
     padding: 1em 0 1em 0;
     border: none;
-    /*Demander à pierre si filter brigtness est ok car éclaircit aussi le texte*/
     &:hover {
         background: linear-gradient($color-hover-secondary, $color-hover-primary);
         @include hover-shadow;
@@ -66,10 +65,11 @@
 @mixin fonctionnement-hover {
     &:hover {
         background-color: $color-light-purple;
-            >div>i {
+
+        >div>i {
             color: $color-primary;
         }
-    } 
+    }
 }
 
 /*DOT*/
@@ -81,13 +81,13 @@
     font-size: 0.9em;
     border-radius: 50%;
     line-height: 1.7em;
-    text-align:center;
+    text-align: center;
 }
 
 /*MAIN*/
 @mixin restaurants-container {
-        width: 89%;
-        margin: auto;
+    width: 89%;
+    margin: auto;
 }
 
 /*CARTE*/
@@ -113,15 +113,34 @@
     background-color: $color-neutral-card;
     border-radius: 1em;
     font-size: 0.7em;
+
     &>h2 {
         margin-bottom: 0;
     }
+
     &>div>p {
         margin: 0.7em 0 0.7em 0;
     }
+
     &>div>h3 {
         font-size: 1.2em;
         margin: 0 0 0.7em 0;
+    }
+
+    &:hover {
+        animation: show-selection 1s forwards;
+
+        @keyframes show-selection {
+
+            /*transition pour le check*/
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
     }
 }
 
@@ -130,6 +149,7 @@
     svg path {
         fill: transparent;
     }
+
     &:hover .fill-animation {
         animation: animated-fill 1s 1 forwards;
         transform-origin: 50% 100%;
@@ -139,14 +159,15 @@
 @mixin animated-heart-fill {
     @keyframes animated-fill {
         from {
-            fill: #9356DC;
+            fill: url(#gradient1);
             transform: scale(0);
         }
+
         to {
-            fill: #e06adb;
+            fill: url(#gradient1);
             transform: scale(1);
         }
-    }   
+    }
 }
 
 @mixin setting-animated-card-menu {
@@ -161,28 +182,4 @@
             transform: translateY(0);
         }
     }
-}
-
-@mixin animated-card-menu {
-    opacity: 0;
-    animation: animated-menu 2s 1 forwards;
-    transform-origin: top;
-}
-
-@mixin animated-card-menu2 {
-    opacity: 0;
-    animation: animated-menu 2s 250ms 1 forwards;
-    transform-origin: top;
-}
-
-@mixin animated-card-menu3 {
-    opacity: 0;
-    animation: animated-menu 2s 500ms 1 forwards;
-    transform-origin: top;
-}
-
-@mixin animated-card-menu4 {
-    opacity: 0;
-    animation: animated-menu 2s 750ms 1 forwards;
-    transform-origin: top;
 }
