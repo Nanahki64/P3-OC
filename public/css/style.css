@@ -361,6 +361,7 @@ header > .header__img {
 /*CARTE*/
 /*IMAGE-RESTAURANT*/
 /*PLATS*/
+/*KEYFRAMES*/
 /*LOCATION*/
 .location {
   display: flex;
@@ -560,15 +561,25 @@ header > .header__img {
   height: 1.5em;
   top: 11.8em;
   right: 3em;
-  z-index: 10;
   cursor: pointer;
+  z-index: 3;
 }
 .heart1 svg path {
   fill: transparent;
 }
-.heart1 svg path:active {
-  cursor: pointer;
-  fill: url(#gradient1);
+.heart1:hover .fill-animation {
+  animation: animated-fill 1s 1 forwards;
+  transform-origin: 50% 100%;
+}
+@keyframes animated-fill {
+  from {
+    fill: #9356DC;
+    transform: scale(0);
+  }
+  to {
+    fill: #e06adb;
+    transform: scale(1);
+  }
 }
 
 .second-container {
@@ -619,6 +630,7 @@ header > .header__img {
 /*CARTE*/
 /*IMAGE-RESTAURANT*/
 /*PLATS*/
+/*KEYFRAMES*/
 /*FLECHE HEADER*/
 .arrow-header {
   position: relative;
@@ -685,9 +697,19 @@ header > .header__img {
 .heart2 svg path {
   fill: transparent;
 }
-.heart2 svg path:active {
-  cursor: pointer;
-  fill: url(#gradient1);
+.heart2:hover .fill-animation {
+  animation: animated-fill 1s 1 forwards;
+  transform-origin: 50% 100%;
+}
+@keyframes animated-fill {
+  from {
+    fill: #9356DC;
+    transform: scale(0);
+  }
+  to {
+    fill: #e06adb;
+    transform: scale(1);
+  }
 }
 
 /*BORDER à refactoriser en mixin*/

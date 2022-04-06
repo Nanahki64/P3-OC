@@ -124,3 +124,27 @@
         margin: 0 0 0.7em 0;
     }
 }
+
+/*KEYFRAMES*/
+@mixin settings-heart-fill {
+    svg path {
+        fill: transparent;
+    }
+    &:hover .fill-animation {
+        animation: animated-fill 1s 1 forwards;
+        transform-origin: 50% 100%;
+    }
+}
+
+@mixin animated-heart-fill {
+    @keyframes animated-fill {
+        from {
+            fill: #9356DC;
+            transform: scale(0);
+        }
+        to {
+            fill: #e06adb;
+            transform: scale(1);
+        }
+    }   
+}

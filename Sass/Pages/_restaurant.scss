@@ -59,13 +59,8 @@
     top: 1.3em;
     left: 20em;
     cursor: pointer;
-    svg path {
-        fill: transparent;
-        &:active {
-            cursor: pointer;
-            fill: url(#gradient1);
-        }
-    }
+    @include settings-heart-fill;
+    @include animated-heart-fill;
 }
 
 /*BORDER à refactoriser en mixin*/
