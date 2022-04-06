@@ -655,7 +655,7 @@ header > .header__img {
 /*MENU*/
 .menu {
   background-color: #eaeaea;
-  height: 65em;
+  height: 62em;
 }
 .menu__container {
   width: 90%;
@@ -729,7 +729,7 @@ header > .header__img {
   justify-content: space-between;
   height: 14.5em;
 }
-.carte__menu {
+.carte__menu--animated {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -739,29 +739,122 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   font-size: 0.7em;
+  opacity: 0;
+  animation: animated-menu 2s 1 forwards;
+  transform-origin: top;
   display: flex;
   flex-flow: column wrap;
 }
-.carte__menu > h2 {
+.carte__menu--animated > h2 {
   margin-bottom: 0;
 }
-.carte__menu > div > p {
+.carte__menu--animated > div > p {
   margin: 0.7em 0 0.7em 0;
 }
-.carte__menu > div > h3 {
+.carte__menu--animated > div > h3 {
   font-size: 1.2em;
   margin: 0 0 0.7em 0;
+}
+.carte__menu--animated2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  opacity: 0;
+  animation: animated-menu 2s 250ms 1 forwards;
+  transform-origin: top;
+  display: flex;
+  flex-flow: column wrap;
+}
+.carte__menu--animated2 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated2 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated2 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  opacity: 0;
+  animation: animated-menu 2s 500ms 1 forwards;
+  transform-origin: top;
+  display: flex;
+  flex-flow: column wrap;
+}
+.carte__menu--animated3 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated3 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated3 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+.carte__menu--animated4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
+  width: 40em;
+  height: fit-content;
+  padding: 0 2em 0 0.7em;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 0.7em;
+  opacity: 0;
+  animation: animated-menu 2s 750ms 1 forwards;
+  transform-origin: top;
+  display: flex;
+  flex-flow: column wrap;
+}
+.carte__menu--animated4 > h2 {
+  margin-bottom: 0;
+}
+.carte__menu--animated4 > div > p {
+  margin: 0.7em 0 0.7em 0;
+}
+.carte__menu--animated4 > div > h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+@keyframes animated-menu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .carte__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.carte__restaurant2 {
+.carte__restaurant2--animated {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 19.5em;
+  animation: animated-menu 2s 1 forwards;
+  transform-origin: top;
 }
 
 /*COMMANDE*/
@@ -769,7 +862,8 @@ header > .header__img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1.5em;
+  background-color: #eaeaea;
+  padding-bottom: 2em;
 }
 .order > button {
   font-family: "Roboto", sans-serif;

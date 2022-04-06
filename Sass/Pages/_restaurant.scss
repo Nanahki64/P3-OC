@@ -14,6 +14,7 @@
 /*IMAGE-RESTAURANT*/
 .restaurant {
     @include restaurant-settings;
+
     &__image {
         @include restaurant-settings;
         object-fit: cover;
@@ -23,14 +24,17 @@
 /*MENU*/
 .menu {
     background-color: $color-main-primary;
-    height: 65em;
+    height: 62em;
+
     &__container {
         width: 90%;
         margin: auto;
-        & > h2 {
+
+        &>h2 {
             margin-bottom: 0.2em;
         }
     }
+
     &__header {
         position: absolute;
         width: 100%;
@@ -38,16 +42,19 @@
         border-radius: 2em 2em 0 0;
         background-color: $color-main-primary;
     }
+
     &__title--texte {
         @include shrikhand-400;
         font-size: 1.7em;
         margin-bottom: 1em;
     }
+
     &__second__title--text {
         @include roboto-400;
         font-size: 1.2em;
         padding-top: 0.8em;
     }
+
     &__restaurant2 {
         background-color: $color-main-primary;
         height: 70em;
@@ -77,19 +84,48 @@
 .carte {
     @include card;
     height: 14.5em;
+
     &__menu {
-        @include card-plats;
-        display: flex;
-        flex-flow: column wrap;
+        &--animated {
+            @include card-plats;
+            @include animated-card-menu;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        &--animated2 {
+            @include card-plats;
+            @include animated-card-menu2;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        &--animated3 {
+            @include card-plats;
+            @include animated-card-menu3;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        &--animated4 {
+            @include card-plats;
+            @include animated-card-menu4;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        @include setting-animated-card-menu;
     }
+
     &__description {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__restaurant2 {
-        @include card;
-        height: 19.5em;
+        &--animated {
+            @include card;
+            height: 19.5em;
+            animation: animated-menu 2s 1 forwards;
+            transform-origin: top;
+        }
     }
 }
 
@@ -98,7 +134,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1.5em;
+    background-color: $color-main-primary;
+    padding-bottom: 2em;
+
     &>button {
         @include btn;
         @include shadow;
