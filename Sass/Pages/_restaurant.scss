@@ -100,10 +100,10 @@
                 }
             }
             &:hover .carte__check {
-                transform: scaleX(1) translateX(0);
+                -webkit-transform: scaleX(1) translateX(0);
             }
             &:hover .carte__check i {
-                transform: rotate(1turn);
+                -webkit-transform: rotate(1turn);
             }
             &:hover .carte__description {
                 width: 20em;
@@ -145,8 +145,8 @@
         width: 5em;
         border-radius: 0 1em 1em 0;
         transform-origin: 100% 50%;
-        transform: scaleX(1) translateX(5em);
-        transition: transform 500ms ease-in-out;
+        -webkit-transform: scaleX(1) translateX(5em);
+        -webkit-transition: -webkit-transform 500ms ease-in-out;
 
         &>i {
             display: flex;
