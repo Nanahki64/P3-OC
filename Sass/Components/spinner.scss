@@ -4,7 +4,7 @@
 @mixin loadder-spinner {
     .loadder {
         position: fixed;
-        width: 96vw;
+        width: 100%;
         height: 251.8vh;
         background-color: rgba(128, 128, 128, 0.466);
         z-index: 10;
