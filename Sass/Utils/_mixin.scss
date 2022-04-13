@@ -109,7 +109,7 @@
     @include shadow;
     width: 40em;
     height: fit-content;
-    padding: 0 2em 0 0.7em;
+    padding: 0 0 0 1em;
     background-color: $color-neutral-card;
     border-radius: 1em;
     font-size: 0.7em;
@@ -119,28 +119,13 @@
     }
 
     &>div>p {
-        margin: 0.7em 0 0.7em 0;
-    }
-
-    &>div>h3 {
-        font-size: 1.2em;
+        font-size: 1.3em;
         margin: 0 0 0.7em 0;
     }
 
-    &:hover {
-        animation: show-selection 1s forwards;
-
-        @keyframes show-selection {
-
-            /*transition pour le check*/
-            from {
-                background-color: red;
-            }
-
-            to {
-                background-color: red;
-            }
-        }
+    &>div>h3 {
+        font-size: 1.5em;
+        margin: 2.7em 0 0 0;
     }
 }
 

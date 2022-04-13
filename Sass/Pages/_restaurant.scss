@@ -24,7 +24,7 @@
 /*MENU*/
 .menu {
     background-color: $color-main-primary;
-    height: 62em;
+    height: 66em;
 
     &__container {
         width: 90%;
@@ -83,37 +83,86 @@
 /*CARTE*/
 .carte {
     @include card;
-    height: 14.5em;
+    height: 16em;
 
     &__menu {
-
         &--animated {
             @for $menu from 1 through 10 {
                 &-#{$menu} {
                     @include card-plats;
                     display: flex;
-                    flex-flow: column wrap;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
                     opacity: 0;
-                    animation: animated-menu 2s 100ms*$menu 1 forwards;
+                    animation: animated-menu 2s 200ms*$menu 1 forwards;
                     transform-origin: top;
+                    overflow: hidden;
                 }
             }
+            &:hover .carte__check {
+                transform: scaleX(1) translateX(0);
+            }
+            &:hover .carte__check i {
+                transform: rotate(1turn);
+            }
+            &:hover .carte__description {
+                width: 20em;
+            }
         }
+
         @include setting-animated-card-menu;
     }
 
     &__description {
         display: flex;
+        flex-flow: column;
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        transition: width 500ms ease-in-out;
+
+        &>p {
+            font-size: 1.3em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        &>h2 {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 0.5em;
+        }
     }
 
+    &__prix {
+        width: 0;
+    }
+
+    &__check {
+        display: flex;
+        background-color: $color-tertiary;
+        width: 5em;
+        border-radius: 0 1em 1em 0;
+        transform-origin: 100% 50%;
+        transform: scaleX(1) translateX(5em);
+        transition: transform 500ms ease-in-out;
+
+        &>i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5em;
+            font-size: 2em;
+            filter: invert(100%);
+        }
+    }
 
     &__restaurant2 {
-            @include card;
-            height: 19.5em;
-            animation: animated-menu 2s 1 forwards;
-            transform-origin: top;
+        @include card;
+        height: 21em;
+        animation: animated-menu 2s 1 forwards;
+        transform-origin: top;
     }
 }
 

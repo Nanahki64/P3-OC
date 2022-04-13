@@ -1,0 +1,89 @@
+@import "../Utils/variables";
+@import "../Utils/mixin";
+
+@mixin loadder-spinner {
+    .loadder {
+        position: fixed;
+        width: 96vw;
+        height: 251.8vh;
+        background-color: rgba(128, 128, 128, 0.466);
+        z-index: 10;
+        animation: loadder 3s ease-in-out both;
+
+        &__spinner--color1 {
+            top: 50%;
+            left: 34%;
+            animation: spinner 3s ease-in-out both;
+            @include spinner-settings;
+            border-top: 0.5em solid $color-primary;
+
+        }
+
+        &__spinner--color2 {
+            top: -0.2em;
+            @include spinner-settings;
+            border-bottom: 0.5em solid $color-background-footer;
+        }
+
+        &__spinner--color3 {
+            left: -0.5em;
+            @include spinner-settings;
+            border-left: 0.5em solid $color-tertiary;
+        }
+
+        &__spinner--color4 {
+            @include spinner-settings;
+            border-right: 0.5em solid $color-hover-secondary;
+        }
+    }
+}
+
+@mixin spinner-settings {
+    position: fixed;
+    margin: 0;
+    width: 8em;
+    height: 8em;
+    border-radius: 8em;
+}
+
+@keyframes loadder {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    95% {
+        opacity: 0.2;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0vh;
+    }
+
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0)
+    }
+
+    99% {
+        transform: rotate(2turn) scale(10)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}

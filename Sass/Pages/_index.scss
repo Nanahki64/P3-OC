@@ -1,5 +1,10 @@
 @import "../Utils/variables";
 @import "../Utils/mixin";
+@import "../Components/spinner";
+
+
+/*SPINNER*/
+@include loadder-spinner;
 
 /*LOCATION*/
 .location {
