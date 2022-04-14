@@ -365,7 +365,7 @@ header > .header__img {
 /*FONCTIONNEMENT*/
 /*CARTE*/
 /*IMAGE-RESTAURANT*/
-@keyframes loadder {
+@-webkit-keyframes loadder {
   0% {
     opacity: 1;
   }
@@ -386,7 +386,7 @@ header > .header__img {
     height: 0vh;
   }
 }
-@keyframes spinner {
+@-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0);
   }
@@ -417,12 +417,12 @@ header > .header__img {
   height: 251.8vh;
   background-color: rgba(128, 128, 128, 0.466);
   z-index: 10;
-  animation: loadder 3s ease-in-out both;
+  -webkit-animation: loadder 3s ease-in-out both;
 }
 .loadder__spinner--color1 {
   top: 50%;
   left: 34%;
-  animation: spinner 3s ease-in-out both;
+  -webkit-animation: spinner 3s ease-in-out both;
   position: fixed;
   margin: 0;
   width: 8em;
@@ -662,10 +662,10 @@ header > .header__img {
   fill: transparent;
 }
 .heart1:hover .fill-animation {
-  animation: animated-fill 1s 1 forwards;
+  -webkit-animation: animated-fill 1s 1 forwards;
   transform-origin: 50% 100%;
 }
-@keyframes animated-fill {
+@-webkit-keyframes animated-fill {
   from {
     fill: url(#gradient1);
     transform: scale(0);
@@ -787,10 +787,10 @@ header > .header__img {
   fill: transparent;
 }
 .heart2:hover .fill-animation {
-  animation: animated-fill 1s 1 forwards;
+  -webkit-animation: animated-fill 1s 1 forwards;
   transform-origin: 50% 100%;
 }
-@keyframes animated-fill {
+@-webkit-keyframes animated-fill {
   from {
     fill: url(#gradient1);
     transform: scale(0);
@@ -832,7 +832,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 200ms 1 forwards;
+  -webkit-animation: animated-menu 2s 200ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -861,7 +861,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 400ms 1 forwards;
+  -webkit-animation: animated-menu 2s 400ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -890,7 +890,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 600ms 1 forwards;
+  -webkit-animation: animated-menu 2s 600ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -919,7 +919,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 800ms 1 forwards;
+  -webkit-animation: animated-menu 2s 800ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -948,7 +948,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 1000ms 1 forwards;
+  -webkit-animation: animated-menu 2s 1000ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -977,7 +977,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 1200ms 1 forwards;
+  -webkit-animation: animated-menu 2s 1200ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1006,7 +1006,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 1400ms 1 forwards;
+  -webkit-animation: animated-menu 2s 1400ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1035,7 +1035,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 1600ms 1 forwards;
+  -webkit-animation: animated-menu 2s 1600ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1064,7 +1064,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 1800ms 1 forwards;
+  -webkit-animation: animated-menu 2s 1800ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1093,7 +1093,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  animation: animated-menu 2s 2000ms 1 forwards;
+  -webkit-animation: animated-menu 2s 2000ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1117,10 +1117,10 @@ header > .header__img {
 .carte__menu--animated:hover .carte__description {
   width: 20em;
 }
-@keyframes animated-menu {
+@-webkit-keyframes animated-menu {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -1171,7 +1171,7 @@ header > .header__img {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 21em;
-  animation: animated-menu 2s 1 forwards;
+  -webkit-animation: animated-menu 2s 1 forwards;
   transform-origin: top;
 }
 

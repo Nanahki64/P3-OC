@@ -94,7 +94,7 @@
                     flex-wrap: nowrap;
                     justify-content: space-between;
                     opacity: 0;
-                    animation: animated-menu 2s 200ms*$menu 1 forwards;
+                    -webkit-animation: animated-menu 2s 200ms*$menu 1 forwards;
                     transform-origin: top;
                     overflow: hidden;
                 }
@@ -161,7 +161,7 @@
     &__restaurant2 {
         @include card;
         height: 21em;
-        animation: animated-menu 2s 1 forwards;
+        -webkit-animation: animated-menu 2s 1 forwards;
         transform-origin: top;
     }
 }

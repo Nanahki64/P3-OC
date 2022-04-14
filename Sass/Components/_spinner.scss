@@ -8,12 +8,12 @@
         height: 251.8vh;
         background-color: rgba(128, 128, 128, 0.466);
         z-index: 10;
-        animation: loadder 3s ease-in-out both;
+        -webkit-animation: loadder 3s ease-in-out both;
 
         &__spinner--color1 {
             top: 50%;
             left: 34%;
-            animation: spinner 3s ease-in-out both;
+            -webkit-animation: spinner 3s ease-in-out both;
             @include spinner-settings;
             border-top: 0.5em solid $color-primary;
 
@@ -46,7 +46,7 @@
     border-radius: 8em;
 }
 
-@keyframes loadder {
+@-webkit-keyframes loadder {
     0% {
         opacity: 1;
     }
@@ -74,7 +74,7 @@
 
 }
 
-@keyframes spinner {
+@-webkit-keyframes spinner {
     0% {
         -webkit-transform: rotate(0)
     }

@@ -5,13 +5,13 @@
     }
 
     &:hover .fill-animation {
-        animation: animated-fill 1s 1 forwards;
+        -webkit-animation: animated-fill 1s 1 forwards;
         transform-origin: 50% 100%;
     }
 }
 
 @mixin animated-heart-fill {
-    @keyframes animated-fill {
+    @-webkit-keyframes animated-fill {
         from {
             fill: url(#gradient1);
             transform: scale(0);
@@ -25,10 +25,10 @@
 }
 
 @mixin setting-animated-card-menu {
-    @keyframes animated-menu {
+    @-webkit-keyframes animated-menu {
         from {
             opacity: 0;
-            transform: translateY(-10px);
+            transform: translateY(10px);
         }
 
         to {
