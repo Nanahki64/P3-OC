@@ -1,0 +1,28 @@
+@import "../Utils/variables";
+@import "../Utils/mixin";
+
+/*PLATS*/
+@mixin card-plats {
+    @include roboto-500;
+    @include shadow;
+    width: 40em;
+    height: fit-content;
+    padding: 0 0 0 1em;
+    background-color: $color-neutral-card;
+    border-radius: 1em;
+    font-size: 0.7em;
+
+    &>h2 {
+        margin-bottom: 0;
+    }
+
+    &>div>p {
+        font-size: 1.3em;
+        margin: 0 0 0.7em 0;
+    }
+
+    &>div>h3 {
+        font-size: 1.5em;
+        margin: 2.7em 0 0 0;
+    }
+}
