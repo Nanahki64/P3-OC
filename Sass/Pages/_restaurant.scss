@@ -94,16 +94,17 @@
                     flex-wrap: nowrap;
                     justify-content: space-between;
                     opacity: 0;
-                    -webkit-animation: animated-menu 2s 200ms*$menu 1 forwards;
+                    animation: animated-menu 2s 200ms*$menu 1 forwards;
                     transform-origin: top;
                     overflow: hidden;
                 }
             }
             &:hover .carte__check {
-                -webkit-transform: scaleX(1) translateX(0);
+                transform: scaleX(1) translateX(0);
             }
             &:hover .carte__check i {
-                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn);
+                transition: transform 500ms ease-in-out;
             }
             &:hover .carte__description {
                 width: 20em;
@@ -145,8 +146,8 @@
         width: 5em;
         border-radius: 0 1em 1em 0;
         transform-origin: 100% 50%;
-        -webkit-transform: scaleX(1) translateX(5em);
-        -webkit-transition: -webkit-transform 500ms ease-in-out;
+        transform: scaleX(1) translateX(5em);
+        transition: transform 500ms ease-in-out;
 
         &>i {
             display: flex;
@@ -161,7 +162,7 @@
     &__restaurant2 {
         @include card;
         height: 21em;
-        -webkit-animation: animated-menu 2s 1 forwards;
+        animation: animated-menu 2s 1 forwards;
         transform-origin: top;
     }
 }

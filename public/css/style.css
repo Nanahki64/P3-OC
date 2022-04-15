@@ -365,7 +365,7 @@ header > .header__img {
 /*FONCTIONNEMENT*/
 /*CARTE*/
 /*IMAGE-RESTAURANT*/
-@-webkit-keyframes loadder {
+@keyframes loadder {
   0% {
     opacity: 1;
   }
@@ -386,15 +386,15 @@ header > .header__img {
     height: 0vh;
   }
 }
-@-webkit-keyframes spinner {
+@keyframes spinner {
   0% {
-    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
   99% {
-    -webkit-transform: rotate(720deg) scale(10);
+    transform: rotate(720deg) scale(10);
   }
   100% {
-    -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 /*COLORS*/
@@ -417,12 +417,12 @@ header > .header__img {
   height: 251.8vh;
   background-color: rgba(128, 128, 128, 0.466);
   z-index: 10;
-  -webkit-animation: loadder 3s ease-in-out both;
+  animation: loadder 3s ease-in-out both;
 }
 .loadder__spinner--color1 {
   top: 50%;
   left: 34%;
-  -webkit-animation: spinner 3s ease-in-out both;
+  animation: spinner 3s ease-in-out both;
   position: fixed;
   margin: 0;
   width: 8em;
@@ -662,10 +662,10 @@ header > .header__img {
   fill: transparent;
 }
 .heart1:hover .fill-animation {
-  -webkit-animation: animated-fill 1s 1 forwards;
+  animation: animated-fill 1s 1 forwards;
   transform-origin: 50% 100%;
 }
-@-webkit-keyframes animated-fill {
+@keyframes animated-fill {
   from {
     fill: url(#gradient1);
     transform: scale(0);
@@ -712,6 +712,41 @@ header > .header__img {
   margin-right: 0.5em;
 }
 
+@media screen and (min-width: 500px) {
+  header {
+    justify-content: flex-start;
+    margin-left: 2em;
+  }
+
+  .fonctionnement {
+    flex-direction: row;
+    min-height: 7em;
+    padding-top: 3em;
+  }
+  .fonctionnement__container {
+    width: 70%;
+    padding-bottom: 0em;
+  }
+
+  .restaurants__container {
+    width: 70%;
+  }
+
+  .second-container {
+    flex-flow: row wrap;
+    min-height: auto;
+    width: 95%;
+  }
+
+  .footer-container {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-container > a {
+    margin: 1.4em 0 0 0;
+  }
+}
 /*COLORS*/
 /*COLORS*/
 /*MAIN*/
@@ -787,10 +822,10 @@ header > .header__img {
   fill: transparent;
 }
 .heart2:hover .fill-animation {
-  -webkit-animation: animated-fill 1s 1 forwards;
+  animation: animated-fill 1s 1 forwards;
   transform-origin: 50% 100%;
 }
-@-webkit-keyframes animated-fill {
+@keyframes animated-fill {
   from {
     fill: url(#gradient1);
     transform: scale(0);
@@ -832,7 +867,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 200ms 1 forwards;
+  animation: animated-menu 2s 200ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -861,7 +896,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 400ms 1 forwards;
+  animation: animated-menu 2s 400ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -890,7 +925,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 600ms 1 forwards;
+  animation: animated-menu 2s 600ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -919,7 +954,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 800ms 1 forwards;
+  animation: animated-menu 2s 800ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -948,7 +983,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 1000ms 1 forwards;
+  animation: animated-menu 2s 1000ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -977,7 +1012,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 1200ms 1 forwards;
+  animation: animated-menu 2s 1200ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1006,7 +1041,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 1400ms 1 forwards;
+  animation: animated-menu 2s 1400ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1035,7 +1070,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 1600ms 1 forwards;
+  animation: animated-menu 2s 1600ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1064,7 +1099,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 1800ms 1 forwards;
+  animation: animated-menu 2s 1800ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1093,7 +1128,7 @@ header > .header__img {
   flex-wrap: nowrap;
   justify-content: space-between;
   opacity: 0;
-  -webkit-animation: animated-menu 2s 2000ms 1 forwards;
+  animation: animated-menu 2s 2000ms 1 forwards;
   transform-origin: top;
   overflow: hidden;
 }
@@ -1109,15 +1144,16 @@ header > .header__img {
   margin: 2.7em 0 0 0;
 }
 .carte__menu--animated:hover .carte__check {
-  -webkit-transform: scaleX(1) translateX(0);
+  transform: scaleX(1) translateX(0);
 }
 .carte__menu--animated:hover .carte__check i {
-  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
 }
 .carte__menu--animated:hover .carte__description {
   width: 20em;
 }
-@-webkit-keyframes animated-menu {
+@keyframes animated-menu {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -1155,8 +1191,8 @@ header > .header__img {
   width: 5em;
   border-radius: 0 1em 1em 0;
   transform-origin: 100% 50%;
-  -webkit-transform: scaleX(1) translateX(5em);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transform: scaleX(1) translateX(5em);
+  transition: transform 500ms ease-in-out;
 }
 .carte__check > i {
   display: flex;
@@ -1171,7 +1207,7 @@ header > .header__img {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 21em;
-  -webkit-animation: animated-menu 2s 1 forwards;
+  animation: animated-menu 2s 1 forwards;
   transform-origin: top;
 }
 
