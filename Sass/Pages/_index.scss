@@ -168,8 +168,8 @@
 .notification {
     @include roboto-700;
     position: relative;
-    bottom: 13.5em;
-    right: 3.5em;
+    bottom: 1em;
+    right: 6.5em;
     border-radius: 0.3em;
     width: 5.5em;
     height: 2.2em;
@@ -180,7 +180,7 @@
     z-index: 2;
 
     &__texte {
-        padding-top: 0.6em;
+        margin: 0.6em 0 0.6em 0;
     }
 }
 
@@ -235,9 +235,8 @@
 }
 
 @media screen and (min-width: 500px) {
-    header {
-        justify-content: flex-start;
-        margin-left: 2em;
+    .loadder__spinner--color1 {
+        left: 47%;
     }
 
     .fonctionnement {

@@ -15,11 +15,13 @@
         from {
             fill: url(#gradient1);
             transform: scale(0);
+            stroke-width: 1;
         }
 
         to {
             fill: url(#gradient1);
             transform: scale(1);
+            stroke-width: 0;
         }
     }
 }
