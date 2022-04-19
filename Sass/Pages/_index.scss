@@ -202,13 +202,50 @@
     }
 
     .restaurants__container {
-        width: 70%;
+        width: 48%;
     }
 
     .second-container {
         flex-direction: row;
-        min-height: 36em;
+        justify-content: center;
+        min-height: 63em;
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .loadder__spinner--color1 {
+        left: 45%;
+    }
+    
+    .restaurants {
+        &__container {
+            width: 70%;
+        }
+    }
+
+    .restaurants__container {
+        width: 83.5%;
+    }
+
+    .restaurants__title {
+        margin-bottom: 1.5em;
+    }
+
+    .second-container {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        min-height: 34em;
+        width: 95%;
+    }
+
+    .footer-container {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        &>a {
+            margin: 1.4em 0 0 0;
+        }
     }
 }
 
