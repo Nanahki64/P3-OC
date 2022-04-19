@@ -658,7 +658,7 @@ header > .header__img {
   margin-right: 1.5em;
 }
 .fonctionnement__texte {
-  padding-right: 1em;
+  padding-right: 0.9em;
 }
 
 .icone {
@@ -752,16 +752,16 @@ header > .header__img {
   }
 
   .restaurants__container {
-    width: 96%;
+    width: 70%;
   }
 
   .second-container {
     flex-direction: row;
-    min-height: 32em;
-    width: 41em;
+    min-height: 36em;
+    width: 70%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1600px) {
   .loadder__spinner--color1 {
     left: 47%;
   }
