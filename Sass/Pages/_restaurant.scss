@@ -176,9 +176,23 @@
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
+    .menu__container {
+        width: 67%;
+    }
+
+    .heart2 {
+        left: 34em;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .arrow-header {
         right: 35em;
+    }
+
+    .menu__container {
+        width: 90%;
     }
 
     .heart2 {

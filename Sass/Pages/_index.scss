@@ -192,7 +192,27 @@
     min-height: 63em;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
+    .loadder__spinner--color1 {
+        left: 42%;
+    }
+
+    .fonctionnement__container {
+        width: 50%;
+    }
+
+    .restaurants__container {
+        width: 96%;
+    }
+
+    .second-container {
+        flex-direction: row;
+        min-height: 32em;
+        width: 41em;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .loadder__spinner--color1 {
         left: 47%;
     }
