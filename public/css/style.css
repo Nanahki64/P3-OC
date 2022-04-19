@@ -1273,14 +1273,14 @@ header > .header__img {
 
 @media screen and (min-width: 700px) {
   .menu__container {
-    width: 67%;
+    width: 50%;
   }
 
   .heart2 {
-    left: 34em;
+    left: 39em;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1600px) {
   .arrow-header {
     right: 35em;
   }
