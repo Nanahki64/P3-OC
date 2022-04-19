@@ -1,0 +1,20 @@
+.heart1 {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    top: 11.8em;
+    right: 3em;
+    cursor: pointer;
+    z-index: 3;
+    @include settings-heart-fill;
+    @include animated-heart-fill;
+}
+
+.heart2 {
+    position: absolute;
+    top: 1.3em;
+    left: 19em;
+    cursor: pointer;
+    @include settings-heart-fill;
+    @include animated-heart-fill;
+}

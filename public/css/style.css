@@ -350,6 +350,37 @@ header > .header__img {
 }
 
 /*COLORS*/
+/*FONTS*/
+/*FOOTER*/
+.footer__contenent {
+  background-color: #323232;
+}
+.footer__contenent__img {
+  margin-top: 1.5em;
+  filter: invert(100%);
+  width: 7em;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 3em;
+}
+.footer-container > a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 1em 0 0 0;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
+.footer-container > a > i {
+  margin-right: 0.5em;
+}
+
+/*COLORS*/
 /*COLORS*/
 /*MAIN*/
 /*SHADOW*/
@@ -410,6 +441,61 @@ header > .header__img {
 /*PLATS*/
 /*FONTS*/
 /*KEYFRAMES*/
+.heart1 {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  top: 11.8em;
+  right: 3em;
+  cursor: pointer;
+  z-index: 3;
+}
+.heart1 svg path {
+  fill: transparent;
+}
+.heart1:hover .fill-animation {
+  animation: animated-fill 2s 1 forwards;
+  transform-origin: 50% 100%;
+}
+@keyframes animated-fill {
+  from {
+    fill: url(#gradient1);
+    transform: scale(0);
+    stroke-opacity: 1;
+  }
+  to {
+    fill: url(#gradient1);
+    transform: scale(1);
+    stroke-opacity: 0;
+  }
+}
+
+.heart2 {
+  position: absolute;
+  top: 1.3em;
+  left: 19em;
+  cursor: pointer;
+}
+.heart2 svg path {
+  fill: transparent;
+}
+.heart2:hover .fill-animation {
+  animation: animated-fill 2s 1 forwards;
+  transform-origin: 50% 100%;
+}
+@keyframes animated-fill {
+  from {
+    fill: url(#gradient1);
+    transform: scale(0);
+    stroke-opacity: 1;
+  }
+  to {
+    fill: url(#gradient1);
+    transform: scale(1);
+    stroke-opacity: 0;
+  }
+}
+
 /*SPINNER*/
 .loadder {
   position: fixed;
@@ -610,12 +696,12 @@ header > .header__img {
   background-color: white;
   border-radius: 1em;
   height: 15em;
-  width: 22em;
+  width: 20em;
 }
 .restaurants__img--resize {
   border-radius: 1em 1em 0 0;
   height: 10em;
-  width: 22em;
+  width: 20em;
   object-fit: cover;
   object-position: 50% 60%;
 }
@@ -649,69 +735,11 @@ header > .header__img {
   margin: 0.6em 0 0.6em 0;
 }
 
-.heart1 {
-  position: relative;
-  width: 1.5em;
-  height: 1.5em;
-  top: 11.8em;
-  right: 3em;
-  cursor: pointer;
-  z-index: 3;
-}
-.heart1 svg path {
-  fill: transparent;
-}
-.heart1:hover .fill-animation {
-  animation: animated-fill 1s 1 forwards;
-  transform-origin: 50% 100%;
-}
-@keyframes animated-fill {
-  from {
-    fill: url(#gradient1);
-    transform: scale(0);
-    stroke-width: 1;
-  }
-  to {
-    fill: url(#gradient1);
-    transform: scale(1);
-    stroke-width: 0;
-  }
-}
-
 .second-container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   min-height: 63em;
-}
-
-/*FOOTER*/
-.footer__contenent {
-  background-color: #323232;
-}
-.footer__contenent__img {
-  margin-top: 1.5em;
-  filter: invert(100%);
-  width: 7em;
-}
-
-.footer-container {
-  display: flex;
-  flex-flow: column wrap;
-  width: 90%;
-  margin: auto;
-  padding-bottom: 3em;
-}
-.footer-container > a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin: 1em 0 0 0;
-  color: white;
-  text-decoration: none;
-  width: fit-content;
-}
-.footer-container > a > i {
-  margin-right: 0.5em;
 }
 
 @media screen and (min-width: 500px) {
@@ -821,32 +849,6 @@ header > .header__img {
   height: 70em;
 }
 
-.heart2 {
-  position: absolute;
-  top: 1.3em;
-  left: 20em;
-  cursor: pointer;
-}
-.heart2 svg path {
-  fill: transparent;
-}
-.heart2:hover .fill-animation {
-  animation: animated-fill 1s 1 forwards;
-  transform-origin: 50% 100%;
-}
-@keyframes animated-fill {
-  from {
-    fill: url(#gradient1);
-    transform: scale(0);
-    stroke-width: 1;
-  }
-  to {
-    fill: url(#gradient1);
-    transform: scale(1);
-    stroke-width: 0;
-  }
-}
-
 /*BORDER à refactoriser en mixin*/
 .border {
   display: block;
@@ -886,12 +888,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-1 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-1 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-2 {
   font-family: "Roboto", sans-serif;
@@ -915,12 +917,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-2 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-2 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-3 {
   font-family: "Roboto", sans-serif;
@@ -944,12 +946,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-3 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-3 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-4 {
   font-family: "Roboto", sans-serif;
@@ -973,12 +975,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-4 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-4 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-5 {
   font-family: "Roboto", sans-serif;
@@ -1002,12 +1004,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-5 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-5 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-6 {
   font-family: "Roboto", sans-serif;
@@ -1031,12 +1033,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-6 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-6 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-7 {
   font-family: "Roboto", sans-serif;
@@ -1060,12 +1062,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-7 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-7 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-8 {
   font-family: "Roboto", sans-serif;
@@ -1089,12 +1091,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-8 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-8 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-9 {
   font-family: "Roboto", sans-serif;
@@ -1118,12 +1120,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-9 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-9 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated-10 {
   font-family: "Roboto", sans-serif;
@@ -1147,12 +1149,12 @@ header > .header__img {
   margin-bottom: 0;
 }
 .carte__menu--animated-10 > div > p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0 0 0.7em 0;
 }
 .carte__menu--animated-10 > div > h3 {
   font-size: 1.5em;
-  margin: 2.7em 0 0 0;
+  margin: 2.4em 0 0 0;
 }
 .carte__menu--animated:hover .carte__check {
   transform: scaleX(1) translateX(0);
@@ -1162,7 +1164,7 @@ header > .header__img {
   transition: transform 500ms ease-in-out;
 }
 .carte__menu--animated:hover .carte__description {
-  width: 20em;
+  width: 15em;
 }
 @keyframes animated-menu {
   from {
@@ -1178,11 +1180,10 @@ header > .header__img {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  width: 100%;
+  width: 85%;
   transition: width 500ms ease-in-out;
 }
 .carte__description > p {
-  font-size: 1.3em;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

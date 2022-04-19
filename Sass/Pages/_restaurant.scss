@@ -61,15 +61,6 @@
     }
 }
 
-.heart2 {
-    position: absolute;
-    top: 1.3em;
-    left: 20em;
-    cursor: pointer;
-    @include settings-heart-fill;
-    @include animated-heart-fill;
-}
-
 /*BORDER à refactoriser en mixin*/
 .border {
     display: block;
@@ -107,7 +98,7 @@
                 transition: transform 500ms ease-in-out;
             }
             &:hover .carte__description {
-                width: 20em;
+                width: 15em;
             }
         }
 
@@ -118,11 +109,10 @@
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        width: 100%;
+        width: 85%;
         transition: width 500ms ease-in-out;
 
         &>p {
-            font-size: 1.3em;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;

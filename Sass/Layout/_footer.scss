@@ -1,0 +1,33 @@
+@import "../Utils/variables";
+@import "../Utils/fonts";
+
+/*FOOTER*/
+.footer__contenent {
+    background-color: $color-background-footer;
+
+    &__img {
+        margin-top: 1.5em;
+        filter: invert(100%);
+        width: 7em;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3em;
+
+    &>a {
+        @include roboto-400;
+        margin: 1em 0 0 0;
+        color: white;
+        text-decoration: none;
+        width: fit-content;
+    }
+
+    &>a>i {
+        margin-right: 0.5em;
+    }
+}

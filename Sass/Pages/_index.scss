@@ -5,6 +5,7 @@
 @import "../Components/_dishes.scss";
 @import "../Utils/_fonts";
 @import "../Utils/_keyframes";
+@import "../Components/heart";
 
 
 /*SPINNER*/
@@ -142,13 +143,13 @@
         background-color: $color-neutral-card;
         border-radius: 1em;
         height: 15em;
-        width: 22em;
+        width: 20em;
     }
 
     &__img--resize {
         border-radius: 1em 1em 0 0;
         height: 10em;
-        width: 22em;
+        width: 20em;
         object-fit: cover;
         object-position: 50% 60%;
     }
@@ -184,54 +185,11 @@
     }
 }
 
-.heart1 {
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    top: 11.8em;
-    right: 3em;
-    cursor: pointer;
-    z-index: 3;
-    @include settings-heart-fill;
-    @include animated-heart-fill;
-}
-
 .second-container {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     min-height: 63em;
-}
-
-/*FOOTER*/
-.footer__contenent {
-    background-color: $color-background-footer;
-
-    &__img {
-        margin-top: 1.5em;
-        filter: invert(100%);
-        width: 7em;
-    }
-}
-
-.footer-container {
-    display: flex;
-    flex-flow: column wrap;
-    width: 90%;
-    margin: auto;
-    padding-bottom: 3em;
-
-    &>a {
-        @include roboto-400;
-        margin: 1em 0 0 0;
-        color: white;
-        text-decoration: none;
-        width: fit-content;
-    }
-
-    &>a>i {
-        margin-right: 0.5em;
-    }
 }
 
 @media screen and (min-width: 500px) {

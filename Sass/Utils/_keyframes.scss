@@ -5,7 +5,7 @@
     }
 
     &:hover .fill-animation {
-        animation: animated-fill 1s 1 forwards;
+        animation: animated-fill 2s 1 forwards;
         transform-origin: 50% 100%;
     }
 }
@@ -15,13 +15,13 @@
         from {
             fill: url(#gradient1);
             transform: scale(0);
-            stroke-width: 1;
+            stroke-opacity: 1;
         }
 
         to {
             fill: url(#gradient1);
             transform: scale(1);
-            stroke-width: 0;
+            stroke-opacity: 0;
         }
     }
 }
