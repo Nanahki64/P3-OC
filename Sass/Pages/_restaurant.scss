@@ -178,6 +178,10 @@
 
 /*MOBILE LANDSCAPE - TABLETTE*/
 @media screen and (min-width: 700px) {
+    .arrow-header {
+        right: 10em;
+    }
+    
     .menu__container {
         width: 50%;
     }
@@ -215,5 +219,12 @@
 
     .carte__restaurant2 {
         height: 10em;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1800px) {
+    .arrow-header {
+        right: 36em;
     }
 }

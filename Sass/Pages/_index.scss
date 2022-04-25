@@ -213,6 +213,17 @@
     }
 }
 
+/*TABLETTE LANDSCAPE*/
+@media screen and (min-width: 800px) {
+    .restaurants__container {
+        width: 85%;
+    }
+
+    .second-container {
+        width: 45em;
+    }
+}
+
 /*LAPTOP*/
 @media screen and (min-width: 1500px) {
     .loadder__spinner--color1 {
@@ -257,5 +268,12 @@
         &>a {
             margin: 1.4em 0 0 0;
         }
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1800px) {
+    .second-container {
+        width: 100%;
     }
 }
