@@ -176,6 +176,7 @@
     }
 }
 
+/*MOBILE LANDSCAPE - TABLETTE*/
 @media screen and (min-width: 700px) {
     .menu__container {
         width: 50%;
@@ -186,13 +187,14 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+/*LAPTOP*/
+@media screen and (min-width: 1500px) {
     .arrow-header {
-        right: 35em;
+        right: 27em;
     }
 
     .menu__container {
-        width: 90%;
+        width: 95%;
     }
 
     .heart2 {
@@ -200,7 +202,7 @@
     }
 
     .menu {
-        height: 32em;
+        height: 33em;
     }
 
     .menu__restaurant2 {

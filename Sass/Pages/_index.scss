@@ -192,6 +192,7 @@
     min-height: 63em;
 }
 
+/*MOBILE LANDSCAPE - TABLETTE*/
 @media screen and (min-width: 700px) {
     .loadder__spinner--color1 {
         left: 42%;
@@ -212,7 +213,8 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+/*LAPTOP*/
+@media screen and (min-width: 1500px) {
     .loadder__spinner--color1 {
         left: 47%;
     }
@@ -223,7 +225,7 @@
         padding-top: 3em;
 
         &__container {
-            width: 70%;
+            width: 90%;
             padding-bottom: 0em;
         }
     }
@@ -235,7 +237,7 @@
     }
 
     .restaurants__container {
-        width: 94.5%;
+        width: 92%;
     }
 
     .restaurants__title {

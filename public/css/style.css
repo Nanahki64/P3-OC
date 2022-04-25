@@ -742,6 +742,7 @@ header > .header__img {
   min-height: 63em;
 }
 
+/*MOBILE LANDSCAPE - TABLETTE*/
 @media screen and (min-width: 700px) {
   .loadder__spinner--color1 {
     left: 42%;
@@ -761,7 +762,8 @@ header > .header__img {
     min-height: 34em;
   }
 }
-@media screen and (min-width: 1600px) {
+/*LAPTOP*/
+@media screen and (min-width: 1500px) {
   .loadder__spinner--color1 {
     left: 47%;
   }
@@ -772,7 +774,7 @@ header > .header__img {
     padding-top: 3em;
   }
   .fonctionnement__container {
-    width: 70%;
+    width: 90%;
     padding-bottom: 0em;
   }
 
@@ -781,7 +783,7 @@ header > .header__img {
   }
 
   .restaurants__container {
-    width: 94.5%;
+    width: 92%;
   }
 
   .restaurants__title {
@@ -1271,6 +1273,7 @@ header > .header__img {
   box-shadow: 0em 0.8em 1em 0.1em #949494;
 }
 
+/*MOBILE LANDSCAPE - TABLETTE*/
 @media screen and (min-width: 700px) {
   .menu__container {
     width: 50%;
@@ -1280,13 +1283,14 @@ header > .header__img {
     left: 39em;
   }
 }
-@media screen and (min-width: 1600px) {
+/*LAPTOP*/
+@media screen and (min-width: 1500px) {
   .arrow-header {
-    right: 35em;
+    right: 27em;
   }
 
   .menu__container {
-    width: 90%;
+    width: 95%;
   }
 
   .heart2 {
@@ -1294,7 +1298,7 @@ header > .header__img {
   }
 
   .menu {
-    height: 32em;
+    height: 33em;
   }
 
   .menu__restaurant2 {
