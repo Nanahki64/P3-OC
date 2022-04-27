@@ -1,6 +1,17 @@
 @import "./Base/normalize";
+
+@import "./Utils/variables";
+@import "./Utils/_mixin";
+@import "./Utils/_fonts";
+@import "./Utils/_keyframes";
+
+@import "./Components/_spinner";
+@import "./Components/_button.scss";
+@import "./Components/_dishes.scss";
+@import "./Components/heart";
+
 @import "./Layout/header";
 @import "./Layout/footer";
+
 @import "./Pages/index";
 @import "./Pages/restaurant";
-@import "./Utils/variables";

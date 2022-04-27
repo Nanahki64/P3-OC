@@ -8,6 +8,11 @@
         animation: animated-fill 2s 1 forwards;
         transform-origin: 50% 100%;
     }
+
+    &:hover .hide-stroke {
+        animation: animated-opacity 1.7s 1 forwards;
+        transform-origin: 50% 100%;
+    }
 }
 
 @mixin animated-heart-fill {
@@ -15,12 +20,26 @@
         from {
             fill: url(#gradient1);
             transform: scale(0);
-            stroke-opacity: 1;
         }
 
         to {
             fill: url(#gradient1);
             transform: scale(1);
+        }
+    }
+}
+
+@mixin animated-stroke-opacity {
+    @keyframes animated-opacity {
+        0% {
+            stroke-opacity: 1;
+        }
+
+        90% {
+            stroke-opacity: 1;
+        }
+
+        100% {
             stroke-opacity: 0;
         }
     }

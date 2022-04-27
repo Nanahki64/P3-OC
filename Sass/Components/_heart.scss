@@ -8,6 +8,7 @@
     z-index: 3;
     @include settings-heart-fill;
     @include animated-heart-fill;
+    @include animated-stroke-opacity;
 }
 
 .heart2 {

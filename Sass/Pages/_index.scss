@@ -1,13 +1,3 @@
-@import "../Utils/_variables";
-@import "../Utils/_mixin";
-@import "../Components/_spinner";
-@import "../Components/_button.scss";
-@import "../Components/_dishes.scss";
-@import "../Utils/_fonts";
-@import "../Utils/_keyframes";
-@import "../Components/heart";
-
-
 /*SPINNER*/
 @include loadder-spinner;
 
@@ -36,6 +26,7 @@
     align-items: center;
     background-color: $color-main-secondary;
     padding: 1.5em 0 4em 0;
+
     >h1 {
         @include roboto-900;
         font-size: 1.6em;
@@ -49,13 +40,15 @@
         text-align: center;
     }
 
-    >a>button {
+    >a>div {
         @include btn;
         @include shadow;
         cursor: pointer;
         user-select: none;
-        width: 13em;
-        margin-top: 1em;
+    }
+
+    >a>div>span {
+        padding: 0 0.5em 0 0.5em;
     }
 }
 
@@ -67,7 +60,7 @@
     justify-content: space-between;
     padding-top: 2.5em;
     user-select: none;
-    
+
     &__title {
         @include roboto-900;
     }
@@ -127,6 +120,7 @@
 
     &__card__title {
         @include roboto-900;
+        font-size: 1.1em;
         margin: 1em 0 0 0.8em;
     }
 
@@ -164,6 +158,11 @@
         color: black;
         height: 15em;
     }
+}
+
+.texte--formating {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .notification {
@@ -222,6 +221,10 @@
     .second-container {
         width: 45em;
     }
+
+    .fonctionnement__icon--sizing {
+        margin-right: 4.5em;
+    }
 }
 
 /*LAPTOP*/
@@ -265,6 +268,7 @@
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
+
         &>a {
             margin: 1.4em 0 0 0;
         }
