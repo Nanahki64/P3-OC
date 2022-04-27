@@ -21,7 +21,7 @@
 /*MENU*/
 .menu {
     background-color: $color-main-primary;
-    height: 66em;
+    height: 63em;
 
     &__container {
         width: 90%;
@@ -54,7 +54,7 @@
 
     &__restaurant2 {
         background-color: $color-main-primary;
-        height: 70em;
+        height: 68em;
     }
 }
 
@@ -163,7 +163,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: $color-main-primary;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 
     &>button {
         @include btn;

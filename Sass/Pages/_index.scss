@@ -121,12 +121,12 @@
     &__card__title {
         @include roboto-900;
         font-size: 1.1em;
-        margin: 1em 0 0 0.8em;
+        margin: 0.5em 0 0 0.8em;
     }
 
     &__card__location {
         @include roboto-400;
-        margin: 0.3em 0 0.5em 1em;
+        margin: 0.3em 0 0 1em;
     }
 
     &__card {
@@ -136,7 +136,7 @@
         flex-flow: column wrap;
         background-color: $color-neutral-card;
         border-radius: 1em;
-        height: 15em;
+        height: 14.5em;
         width: 20em;
     }
 

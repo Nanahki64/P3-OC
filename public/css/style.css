@@ -679,12 +679,12 @@ header > .header__img {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.1em;
-  margin: 1em 0 0 0.8em;
+  margin: 0.5em 0 0 0.8em;
 }
 .restaurants__card__location {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 0.3em 0 0.5em 1em;
+  margin: 0.3em 0 0 1em;
 }
 .restaurants__card {
   box-shadow: 0em 0.8em 1em 0.1em #adadad71;
@@ -693,7 +693,7 @@ header > .header__img {
   flex-flow: column wrap;
   background-color: white;
   border-radius: 1em;
-  height: 15em;
+  height: 14.5em;
   width: 20em;
 }
 .restaurants__img--resize {
@@ -852,7 +852,7 @@ header > .header__img {
 /*MENU*/
 .menu {
   background-color: #eaeaea;
-  height: 66em;
+  height: 63em;
 }
 .menu__container {
   width: 90%;
@@ -882,7 +882,7 @@ header > .header__img {
 }
 .menu__restaurant2 {
   background-color: #eaeaea;
-  height: 70em;
+  height: 68em;
 }
 
 /*BORDER à refactoriser en mixin*/
@@ -1265,7 +1265,7 @@ header > .header__img {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #eaeaea;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 .order > button {
   font-family: "Roboto", sans-serif;
