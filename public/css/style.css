@@ -545,7 +545,7 @@ header > .header__img {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
-  box-shadow: inset 0em 0.1em 0.2em 0em rgb(204, 203, 203);
+  box-shadow: inset 0em 0.1em 0.2em 0em #cccbcb;
   user-select: none;
 }
 .location > p {
@@ -586,7 +586,7 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;
 }
@@ -595,7 +595,7 @@ header > .header__img {
   box-shadow: 0em 0.8em 1em 0.1em #949494;
 }
 .presentation > a > div > span {
-  padding: 0 0.5em 0 0.5em;
+  padding: 0 1.5em 0 1.5em;
 }
 
 /*FONCTIONNEMENT*/
@@ -616,7 +616,7 @@ header > .header__img {
   font-weight: 700;
   border-radius: 1em;
   height: 4em;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -624,7 +624,7 @@ header > .header__img {
   padding-right: 3em;
 }
 .fonctionnement__view:hover {
-  background-color: rgba(146, 86, 220, 0.1098039216);
+  background-color: #9256dc1c;
 }
 .fonctionnement__view:hover > div > i {
   color: #9356DC;
@@ -687,7 +687,7 @@ header > .header__img {
   margin: 0.3em 0 0.5em 1em;
 }
 .restaurants__card {
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   display: flex;
   align-items: flex-start;
   flex-flow: column wrap;
@@ -905,7 +905,7 @@ header > .header__img {
 .carte__menu--animated-1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -934,7 +934,7 @@ header > .header__img {
 .carte__menu--animated-2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -963,7 +963,7 @@ header > .header__img {
 .carte__menu--animated-3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -992,7 +992,7 @@ header > .header__img {
 .carte__menu--animated-4 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1021,7 +1021,7 @@ header > .header__img {
 .carte__menu--animated-5 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1050,7 +1050,7 @@ header > .header__img {
 .carte__menu--animated-6 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1079,7 +1079,7 @@ header > .header__img {
 .carte__menu--animated-7 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1108,7 +1108,7 @@ header > .header__img {
 .carte__menu--animated-8 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1137,7 +1137,7 @@ header > .header__img {
 .carte__menu--animated-9 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1166,7 +1166,7 @@ header > .header__img {
 .carte__menu--animated-10 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   width: 40em;
   height: fit-content;
   padding: 0 0 0 1em;
@@ -1276,7 +1276,7 @@ header > .header__img {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1em 0 1em 0;
   border: none;
-  box-shadow: 0em 0.8em 1em 0.1em rgba(173, 173, 173, 0.4431372549);
+  box-shadow: 0em 0.8em 1em 0.1em #adadad71;
   cursor: pointer;
   user-select: none;
   width: 11em;
